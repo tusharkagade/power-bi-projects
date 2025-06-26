@@ -1,0 +1,63 @@
+# Power BI Case Study: Marketing Campaign Response Analysis
+
+## Project Objective
+To analyze customer behavior and campaign performance using Power BI by identifying patterns in subscription conversion across various
+demographics and behavioral traits. This dashboard empowers marketing teams to make data-driven decisions for better targeting and ROI.
+
+## Tools Used
+- **Power BI Desktop**
+- **DAX** for KPI and conversion calculations
+- **Power Query** for data transformation and bucket creation
+- Custom visuals and slicers for interaction
+
+## Dataset Overview
+The dataset includes detailed customer and campaign information with the following attributes:
+- `age` and `Age_Group`: Numeric and categorized age bands
+- `job`: Occupation of the customer (e.g., student, management, technician)
+- `education`: Education level (primary, secondary, tertiary)
+- `marital`: Marital status
+- `contact`: Contact method used (cellular, telephone, unknown)
+- `duration`: Call duration in seconds
+- `DurationBucket`: Call duration categorized into short, medium, long
+- `campaign`: Number of contacts during this campaign
+- `subscribed`: Binary outcome for marketing success
+- `month`: Month of last contact
+
+## Dashboard Features
+1. **KPI Summary Cards**
+   - Conversion Rate
+   - Total Contacted Customers
+   - Calls with Duration > 0
+   - Total Subscribed
+
+2. **Demographic Analysis**
+   - Conversion Rate by Job
+   - Conversion Rate by Age Group
+
+3. **Behavioral Analysis**
+   - Conversion Rate vs Duration Bucket
+   - Conversion Rate by Contact Type
+
+4. **Interactive Slicers**
+   - Filter by Month, Contact Method, and Education
+   - Allow users to segment data for deeper insights
+
+## Key Insights Derived
+- Highest conversion observed among **retired** and **students**
+- **Longer calls** (> 300s) yielded significantly better conversion rates
+- Customers aged **60+** showed the highest subscription success
+- **Cellular contacts** performed better than telephone or unknown types
+
+## Business Value Delivered
+- Enabled **targeted marketing** to job roles and age groups with higher success
+- Improved campaign **ROI** by revealing optimal contact duration and methods
+- Made it easier to **report and share insights** with marketing stakeholders
+
+## Conclusion
+This Power BI dashboard demonstrates how marketing and customer behavior data can be translated into actionable insights. 
+By combining demographic segmentation and call metrics, marketing teams can identify what works and focus efforts on high-impact areas.
+
+## Next Steps
+- Integrate **A/B testing** data for deeper performance comparisons
+- Automate monthly updates via **Power BI Service**
+- Apply **machine learning models** on top of this dataset for lead scoring
